@@ -1,0 +1,183 @@
+@import "../styles/abstract/mixins";
+
+.container {
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card,
+  .footer {
+    border-color: #222;
+  }
+  .code {
+    background: #111;
+  }
+  .logo img {
+    filter: invert(1);
+  }
+}
+.container__firtsBox {
+  background-image: url(https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/399261308.jpg?k=84707e721409cac9efbcbc85e2a2ff1c602d00e51a6adb572be2e11b7762e186&o=&hp=1);
+  position: relative;
+  height: 500px;
+  padding: 200px;
+  h1 {
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .container__firtsBox {
+    background: none;
+    height: 130px;
+    padding: 0px;
+  }
+}
+
+.container__secondBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  padding: 0 0 30px;
+  h2 {
+    margin: 30px 20px 5px 20px;
+    font-family: raustila;
+    color: #638337;
+    font-size: 82px;
+    direction: ltr;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+  p {
+    margin: 0 180px;
+    color: rgba(32, 34, 28, 1);
+    font-weight: 300;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container__secondBox {
+    margin: 0;
+    padding: 0;
+    h2 {
+      text-align: center;
+    }
+    p {
+      margin: 30px;
+      text-align: justify;
+    }
+  }
+}
+
+.container__thirdBox {
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0 40px;
+
+  h2 {
+    margin: 30px 20px 5px 20px;
+    font-family: raustila;
+    color: #638337;
+    font-size: 72px;
+    direction: ltr;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+}
+.thirdBox__rooms {
+  display: flex;
+  gap: 60px;
+}
+
+@media (max-width: 600px) {
+  .container__thirdBox {
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .thirdBox__rooms {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.rooms__bookingRoom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+    color: #d1aa65;
+    font-family: Oswald;
+    font-size: 32px;
+    direction: ltr;
+    font-weight: 400;
+    font-style: normal;
+    margin: 10px 0 0;
+    text-shadow: 1px 1px rgb(186, 184, 184);
+  }
+  h4 {
+    margin: 0;
+    color: #638337;
+    font-family: Oswald;
+    font-size: 20px;
+    direction: ltr;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 1px 1px rgb(186, 184, 184);
+  }
+}
+.bookingRoom__Image {
+  border-radius: 100%;
+  box-shadow: 1px 1px rgb(186, 184, 184);
+}
+
+.oporto__tourism {
+  margin: 30px;
+}
+
+.tourism__title {
+  text-align: center;
+
+  h2 {
+    margin: 0;
+    font-family: raustila;
+    color: #638337;
+    font-size: 72px;
+    direction: ltr;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (max-width: 600px) {
+  .tourism__card {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.tourism__card {
+  display: flex;
+  padding: 30px 50px;
+  gap: 45px;
+}
